@@ -15,20 +15,40 @@
     </h2>
     <hr>
     <h3>
-        <script>
-            var username =prompt("Masukkan Username : ");
-            var password =prompt("Masukkan Password : ");        
-        
-            if (username == "bagus") {
-                if (password ==12345) {
-                    document.write("Selamat " + username + "Anda Sukses Login")
-                }else{
-                    document.write("Maaf Password Anda Salah ")
-                }
-            }else{
-                document.write("Maaf Username Anda Tidak Cocok")
-            }
-            </script>
-        </h3>
+    <script>
+    var jawaban = prompt("Masukkan Pilihan (1-7) : ");
+    var hari = " ";
+        switch (jawaban) {
+            case '1':
+            hari = "Senin";
+            break;
+            case '2':
+            hari = "Selasa";
+            break;
+            case '3':
+            hari = "Rabu";
+            break;
+            case '4':
+            hari = "Kamis";
+            break;
+            case '5':
+            hari = "Jum'at";
+            break;
+            case '6':
+            hari = "Sabtu";
+            break;
+            case '7':
+            hari = "Minggu";
+            break;
+        default:
+        hari =" ";
+    }    
+    if(hari==" "){
+        document.write("Pilihan anda salah" );
+    }else{
+        document.write("Hari yang anda pilih adalah hari " + hari  );
+    }
+    </script>
+    </h3>
 </body>
 </html>
