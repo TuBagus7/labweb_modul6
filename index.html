@@ -16,12 +16,23 @@
     <hr>
     <h3>
         <script>
-            var umur = prompt("Masukkan umur :",0);
-            if (umur >= 17) {
-                document.write("Anda bisa membuat KTP");
-            }else{
-                document.write("Maaf umur anda belum cukup untuk membuat KTP");
+            var uk = prompt("Masukkan ukuran :",0);
+            var size = "";
+            if (uk >=100){
+                size ="XXL";
+            } 
+            else if(uk >=80){
+                size = "XL";
+            } 
+            else if(uk >=70){
+                size = "L";
+            } 
+            else if(uk >=60){
+                size = "M";
+            } 
+            else{  size = "S";
             }
+            document.write("Size Anda : " +size)
         </script>
         </h3>
 </body>
