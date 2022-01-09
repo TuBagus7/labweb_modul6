@@ -16,38 +16,9 @@
     <hr>
     <h3>
     <script>
-    var jawaban = prompt("Masukkan Pilihan (1-7) : ");
-    var hari = " ";
-        switch (jawaban) {
-            case '1':
-            hari = "Senin";
-            break;
-            case '2':
-            hari = "Selasa";
-            break;
-            case '3':
-            hari = "Rabu";
-            break;
-            case '4':
-            hari = "Kamis";
-            break;
-            case '5':
-            hari = "Jum'at";
-            break;
-            case '6':
-            hari = "Sabtu";
-            break;
-            case '7':
-            hari = "Minggu";
-            break;
-        default:
-        hari =" ";
-    }    
-    if(hari==" "){
-        document.write("Pilihan anda salah" );
-    }else{
-        document.write("Hari yang anda pilih adalah hari " + hari  );
-    }
+    let age =prompt("usia: ",0);
+    
+    document.write(age >18 ? "Kamu bisa punya KTP" : "Kamu belum cukup umur");
     </script>
     </h3>
 </body>
