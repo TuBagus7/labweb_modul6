@@ -15,12 +15,16 @@
     </h2>
     <hr>
     <script>
-        try {
+       try {
+            var animal="";
             document.write(animal);
+            if(animal == ""){
+                throw "variable animal kosong"
+            }
         } catch (error) {
             alert(error);
         } finally{
-            document.write("<h3> Pesan ini pasti ditampilkan</h3>")
+            document.write("<h3> Pesan ini pasti ditampilkan</h3>");
         }
     </script>
 </body>
