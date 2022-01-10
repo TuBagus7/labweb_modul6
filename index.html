@@ -15,12 +15,13 @@
     </h2>
     <hr>
     <script>
-    var jumlah = prompt("Mau diulang berapa kali ? :");
-    var hitung = 1;
-    do {
-        document.write("<h3>Ini perulangan ke-" + hitung + "</h3>");
-        hitung++;  
-    }while(hitung <= jumlah);
+        try {
+            document.write(animal);
+        } catch (error) {
+            alert(error);
+        } finally{
+            document.write("<h3> Pesan ini pasti ditampilkan</h3>")
+        }
     </script>
 </body>
 </html>
